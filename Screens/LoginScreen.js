@@ -11,10 +11,10 @@ export default function LoginScreen({ navigation }) {
       <Text style={styles.text}>Velkommen</Text>
 
       <TouchableOpacity
-        style={styles.button}
+        style={styles.buttons}
         onPress={() => navigation.navigate("Hjem")}
       >
-        <Text style={styles.buttonText}>Hjem</Text>
+        <Text style={styles.buttonText}> Log ind</Text>
       </TouchableOpacity>
     </View>
   );
@@ -29,8 +29,9 @@ const styles = StyleSheet.create({
     paddingTop: 30, // Aftstand fra top af skærm
   },
   img: {
-    width: 180,
-    height: 180,
+    width: 200,
+    height: 200,
+    resizeMode: "contain",
   },
   text: {
     fontSize: 20,

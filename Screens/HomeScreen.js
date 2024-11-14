@@ -7,7 +7,7 @@ export default function HomeScreen() {
         style={styles.img}
         source={require("../assets/AdventureAtlas-logo.png")}
       />
-      <Text style={styles.text}>Velkommen til Hjem side</Text>
+      <Text style={styles.text}>Velkommen til forside</Text>
     </View>
   );
 }
@@ -21,8 +21,9 @@ const styles = StyleSheet.create({
     paddingTop: 30, // Aftstand fra top af skærm
   },
   img: {
-    width: 180,
-    height: 180,
+    width: 200,
+    height: 200,
+    resizeMode: "contain",
   },
   text: {
     fontSize: 20,
