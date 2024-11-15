@@ -1,4 +1,3 @@
-//import { app } from "./firebase";
 import { Image, StyleSheet, Text, View, TouchableOpacity } from "react-native";
 
 export default function LoginScreen({ navigation }) {
@@ -11,7 +10,7 @@ export default function LoginScreen({ navigation }) {
       <Text style={styles.text}>Velkommen</Text>
 
       <TouchableOpacity
-        style={styles.buttons}
+        style={styles.button}
         onPress={() => navigation.navigate("Hjem")}
       >
         <Text style={styles.buttonText}> Log ind</Text>
